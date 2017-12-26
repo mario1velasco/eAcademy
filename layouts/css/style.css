@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #393939;
+    /*#027BD6;*/
+}
+a {
+    box-sizing: border-box;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+form {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+input,
+select {
+    margin-left: 3px;
+    box-sizing: border-box;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 5px;
+    height: 32px;
+}
+input:hover{
+    border: 1px solid rgb(31, 31, 31);
+}
+select:hover{
+    border: 1px solid rgb(31, 31, 31);
+}
+
+input {
+    padding: 0 10px;
+    width: 160px;
+}
+
+select {
+    color: #707070;
+    padding: 7px 2px 5px 10px;
+    width: 100px;
+    line-height: 26px;
+    background: transparent;
+}
+
+nav .btn-submit {
+    width: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+}
+
+.nav-links a {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.nav-link-button{
+    color: white;
+    background-color: #027BD6;
+    padding: 10px 20px;
+    border-radius: 20px;
+}

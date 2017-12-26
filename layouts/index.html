@@ -1,12 +1,66 @@
-:<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>eAcademy: Encuentra a tu rpofesor particular</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
+
+<head>
+    <title>eAcademy: Find your private teacher</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/logoPoligono.png" alt="logo">
+            <span>e<strong>Academy</strong>
+            </span>
+        </div>
+        <div class="nav-search">
+            <form action="" method="get" class="search1">
+                <!-- <fieldset> -->
+                <select name="method" class="select-search" required>
+                    <option value="online">Online</option>
+                    <option value="person">In person</option>
+                    <option value="group">In a group</option>
+                </select>
+                <input type="text" name="subject" id="" placeholder="Choose a subject" required>
+                <input type="text" name="address" id="" placeholder="Address or Postcode" required>
+                <input type="submit" name="submit" value="find" class="btn-submit">
+                <!-- </fieldset> -->
+            </form>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="#" class="connect-js sign-js">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#" class="connect-js">Log In</a>
+                </li>
+                <li>
+                    <a href="./help.html">Help</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link-button">Find a class</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Find your ideal instructor!</h1>
+        <form action="" method="get" class="search2">
+            <select name="method" class="select-search">
+                <option value="online">Online</option>
+                <option value="person">In person</option>
+                <option value="group">In a group</option>
+            </select>
+            <input type="text" name="subject" id="" placeholder="Choose a subject">
+            <input type="text" name="address" id="" placeholder="Address or Postcode">
+            <input type="submit" value="Find a teacher">
+        </form>
+    </header>
+</body>
 </html>
