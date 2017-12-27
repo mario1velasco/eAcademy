@@ -6,13 +6,35 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #393939;
+    width: 10px auto;
     /*#027BD6;*/
 }
+header,section{
+    padding: 50px 10% 50px 10%;
+}
+
 a {
     box-sizing: border-box;
     color: #4b4b4b;
     text-decoration: none;
 }
+
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 20px;
+}
+ul{
+    list-style-type: none;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -42,12 +64,14 @@ select {
     color: #999;
     border: 1px solid #999;
     border-radius: 5px;
-    height: 32px;
+    /* height: 32px; */
 }
-input:hover{
+
+input:hover {
     border: 1px solid rgb(31, 31, 31);
 }
-select:hover{
+
+select:hover {
     border: 1px solid rgb(31, 31, 31);
 }
 
@@ -61,7 +85,7 @@ select {
     padding: 7px 2px 5px 10px;
     width: 100px;
     line-height: 26px;
-    background: transparent;
+    background: white;;
 }
 
 nav .btn-submit {
@@ -74,7 +98,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
 }
 
 .nav-links a {
@@ -86,9 +110,81 @@ nav li {
 .nav-links a:hover {
     text-decoration: underline;
 }
-.nav-link-button{
+
+.btn-find-class {
     color: white;
-    background-color: #027BD6;
+    background-color: #046381;
     padding: 10px 20px;
     border-radius: 20px;
+}
+
+header {
+    background-image: url(../images/bgSearch1600x330.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header h1 {
+    color:white;
+}
+.header-h1{
+    padding-bottom: 40px;
+}
+
+.btn-find-teacher{
+    color: #046381;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-find-teacher:hover{
+    background:#459fbb;
+    color:white;
+}
+.header-topics{
+    margin-bottom: 30px;
+}
+.materials{
+    display: inline-block;
+    width: 30%;
+    animation-delay: 2s;
+}
+.materials ul{
+    margin-bottom: 20px;
+}
+.materials li{
+    margin-top: 10px;
+}
+#help{
+    background-color: #046381;
+    color: white;
+}
+.help-title{
+    margin-bottom: 40px;
+}
+
+.help-anim{
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+}
+.help-anim h2{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    text-align: center;
+    font-size: 32px;
+}
+.number-line{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
 }

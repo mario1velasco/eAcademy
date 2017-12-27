@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Ubuntu');
     </style>
@@ -15,7 +16,8 @@
     <nav>
         <div class="logo">
             <img src="./images/logoPoligono.png" alt="logo">
-            <span>e<strong>Academy</strong>
+            <span>e
+                <strong>Academy</strong>
             </span>
         </div>
         <div class="nav-search">
@@ -44,23 +46,201 @@
                     <a href="./help.html">Help</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link-button">Find a class</a>
+                    <a href="#" class="btn-find-class">Find a class</a>
                 </li>
             </ul>
         </div>
     </nav>
     <header>
-        <h1>Find your ideal instructor!</h1>
-        <form action="" method="get" class="search2">
-            <select name="method" class="select-search">
-                <option value="online">Online</option>
-                <option value="person">In person</option>
-                <option value="group">In a group</option>
-            </select>
-            <input type="text" name="subject" id="" placeholder="Choose a subject">
-            <input type="text" name="address" id="" placeholder="Address or Postcode">
-            <input type="submit" value="Find a teacher">
-        </form>
+        <div>
+            <div class="header-h1">
+                <h1>Find</h1>
+                <h1>your ideal instructor</h1>
+            </div>
+            <form action="" method="get" class="search2">
+                <select name="method" class="select-search">
+                    <option value="online">Online</option>
+                    <option value="person">In person</option>
+                    <option value="group">In a group</option>
+                </select>
+                <input type="text" name="subject" id="" placeholder="Choose a subject" required>
+                <input type="text" name="address" id="" placeholder="Address or Postcode" required>
+                <input type="submit" value="Find a teacher" class="btn-find-teacher">
+            </form>
+        </div>
     </header>
+    <section class="container" id="topics">
+        <div class="header-topics">
+            <h2>Learn</h2>
+            <h2>any material that you want</h2>
+        </div>
+        <div>
+            <article class="materials animated fadeInRight">
+                <h4>Academic</h4>
+                <ul>
+                    <li>
+                        <a href="">Economics</a>
+                    </li>
+                    <li>
+                        <a href="">Physics</a>
+                    </li>
+                    <li>
+                        <a href="">Politics</a>
+                    </li>
+                    <li>
+                        <a href="">Chemistry</a>
+                    </li>
+                    <li>
+                        <a href="">History</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="materials animated fadeInRight">
+                <h4>Languages</h4>
+                <ul>
+                    <li>
+                        <a href="">Spanish</a>
+                    </li>
+                    <li>
+                        <a href="">English</a>
+                    </li>
+                    <li>
+                        <a href="">Arabic</a>
+                    </li>
+                    <li>
+                        <a href="">Chinese</a>
+                    </li>
+                    <li>
+                        <a href="">Russian</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="materials animated fadeInRight">
+                <h4>IT</h4>
+                <ul>
+                    <li>
+                        <a href="">Basic skills</a>
+                    </li>
+                    <li>
+                        <a href="">Programming</a>
+                    </li>
+                    <li>
+                        <a href="">Excel</a>
+                    </li>
+                    <li>
+                        <a href="">Database</a>
+                    </li>
+                    <li>
+                        <a href="">Photoshop</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="materials animated fadeInRight">
+                <h4>Lifestyle</h4>
+                <ul>
+                    <li>
+                        <a href="">Cooking</a>
+                    </li>
+                    <li>
+                        <a href="">Running</a>
+                    </li>
+                    <li>
+                        <a href="">Babysitting</a>
+                    </li>
+                    <li>
+                        <a href="">Meditation</a>
+                    </li>
+                    <li>
+                        <a href="">Nutrition</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="materials animated fadeInRight">
+                <h4>Art</h4>
+                <ul>
+                    <li>
+                        <a href="">Acting</a>
+                    </li>
+                    <li>
+                        <a href="">Painting</a>
+                    </li>
+                    <li>
+                        <a href="">Dance</a>
+                    </li>
+                    <li>
+                        <a href="">Photography</a>
+                    </li>
+                    <li>
+                        <a href="">Ballet</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="materials animated fadeInRight">
+                <h4>Music</h4>
+                <ul>
+                    <li>
+                        <a href="">Guitar</a>
+                    </li>
+                    <li>
+                        <a href="">Trumpet</a>
+                    </li>
+                    <li>
+                        <a href="">Drums</a>
+                    </li>
+                    <li>
+                        <a href="">Violin</a>
+                    </li>
+                    <li>
+                        <a href="">Piano</a>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section class="container" id="help">
+        <div class="help-title">
+            <h1>Get a tutor</h1>
+            <h1>is easier than you think</h1>
+        </div>
+        <div class="help-numbers">
+            <article class="help-anim">
+                <div class="number-line">
+                    <h2>1</h2>
+                    <svg height="28" width="150">
+                        <line x1="6" y1="28" x2="150" y2="28" style="stroke:white;stroke-width:4" />
+                    </svg>
+                </div>
+                <h4>Search what you want to learn</h4>
+                <div>Over 200 skills and growing.</div>
+            </article>
+            <article class="help-anim">
+                <div class="number-line">
+                    <h2>2</h2>
+                    <svg height="28" width="150">
+                        <line x1="6" y1="28" x2="150" y2="28" style="stroke:white;stroke-width:4" />
+                    </svg>
+                </div>
+                <h4>Choose the tutor you want</h4>
+                <div>Find the right one for you.</div>
+            </article>
+            <article class="help-anim">
+                <div class="number-line">
+                    <h2>3</h2>
+                    <svg height="28" width="150">
+                        <line x1="6" y1="28" x2="150" y2="28" style="stroke:white;stroke-width:4" />
+                    </svg>
+                </div>
+                <h4>Book your lesson in one click</h4>
+                <div>Contact with your teacher.</div>
+            </article>
+        </div>
+    </section>
+    <section class="places">
+        <div class="places-title">
+            <h1>Learn</h1>
+            <h1>anywhere at anytime</h1>
+        </div>
+    </section>
 </body>
+
 </html>
