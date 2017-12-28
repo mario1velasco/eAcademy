@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/slide.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
     <!-- <link href="css/fontawesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU"
         crossorigin="anonymous">
@@ -17,6 +18,8 @@
 </head>
 
 <body>
+    <a href="#popupLog" class="popup-link">Log In</a>
+    <a href="#popup" class="popup-link">Sign In</a>
     <nav>
         <div class="logo">
             <img src="./images/logoPoligono.png" alt="logo">
@@ -307,17 +310,80 @@
         <div class="info">
             <h4>About</h4>
             <ul>
-                <li><a href="">Who are we?</a></li>
-                <li><a href="">Need Help?</a></li>
-                <li><a href="">All materials</a></li>
-                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="">Who are we?</a>
+                </li>
+                <li>
+                    <a href="">Need Help?</a>
+                </li>
+                <li>
+                    <a href="">All materials</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="copyright">
-                <img src="./images/logoPoligono.png" alt="logo">
-                &copy; 2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script>, eLearning company.
+            <img src="./images/logoPoligono.png" alt="logo"> &copy; 2016
+            <script>
+                new Date().getFullYear() > 2016 && document.write("-" + new Date().getFullYear());
+            </script>, eLearning company.
         </div>
     </footer>
+
+    <a href="#popupLog" class="popup-link">Ver mas información</a>
+
+
+    <div class="modal-wrapper" id="popupLog">
+        <div class="popup-contenedor">
+            <h3>Login</h3>
+            <div class="login">
+                <div class="log-fa btn-find-class">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <a href="" class="btn-fa">Sign in with Facebook</a>
+                </div>
+                <div>
+                    <span>or</span>
+                </div>
+                <form action="" method="get" class="popform">
+                    <input type="text" name="subject" id="" placeholder="Email" required>
+                    <input type="password" name="address" id="" placeholder="Password" required>
+                    <input type="submit" name="submit" value="Login" class="btn-find-class">
+                </form>
+                <div class="forgot">
+                    <a href="">Forgot Password? /</a>
+                    <a href="">Not yet a member?</a>
+                </div>
+            </div>
+            <a class="popup-cerrar" href="#">X</a>
+        </div>
+    </div>
+    <div class="modal-wrapper" id="popup">
+        <div class="popup-contenedor">
+            <h3>Sign Up</h3>
+            <div class="login">
+                <div class="log-fa btn-find-class">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <a href="" class="btn-fa">Sign in with Facebook</a>
+                </div>
+                <div>
+                    <span>or</span>
+                </div>
+                <form action="" method="get" class="popform">
+                    <input type="text" name="subject" id="" placeholder="Email" required>
+                    <input type="password" name="address" id="" placeholder="Password" required>
+                    <input type="submit" name="submit" value="Login" class="btn-find-class">
+                </form>
+                <div class="forgot">
+                    <a href="">Forgot Password? /</a>
+                    <a href="">Not yet a member?</a>
+                </div>
+            </div>
+            <a class="popup-cerrar" href="#">X</a>
+        </div>
+    </div>
+
 </body>
 
 </html>
