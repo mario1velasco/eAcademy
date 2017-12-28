@@ -18,8 +18,6 @@
 </head>
 
 <body>
-    <a href="#popupLog" class="popup-link">Log In</a>
-    <a href="#popup" class="popup-link">Sign In</a>
     <nav>
         <div class="logo">
             <img src="./images/logoPoligono.png" alt="logo">
@@ -44,10 +42,10 @@
         <div class="nav-links">
             <ul>
                 <li>
-                    <a href="#" class="connect-js sign-js">Sign Up</a>
+                    <a href="#popupReg" class="connect-js sign-js">Sign Up</a>
                 </li>
                 <li>
-                    <a href="#" class="connect-js">Log In</a>
+                    <a href="#popupLog" class="connect-js">Log In</a>
                 </li>
                 <li>
                     <a href="./help.html">Help</a>
@@ -331,56 +329,73 @@
             </script>, eLearning company.
         </div>
     </footer>
-
-    <a href="#popupLog" class="popup-link">Ver mas información</a>
-
-
-    <div class="modal-wrapper" id="popupLog">
-        <div class="popup-contenedor">
-            <h3>Login</h3>
-            <div class="login">
-                <div class="log-fa btn-find-class">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <a href="" class="btn-fa">Sign in with Facebook</a>
+    <div>        
+        <div class="modal-wrapper" id="popupReg">
+            <div class="popup-contenedor">
+                <h3>Sign Up</h3>
+                <div class="login">
+                    <div class="log-fa btn-find-class">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <a href="" class="btn-fa">Sign in with Facebook</a>
+                    </div>
+                    <div>
+                        <span>or</span>
+                    </div>
+                    <form action="" method="get" class="popform">
+                        <input type="text" name="firstName" id="" placeholder="First Name" required>
+                        <input type="text" name="secondName" id="" placeholder="Second Name" required>
+                        <input type="email" name="subject" id="" placeholder="Email" required>
+                        <input type="password" name="address" id="" placeholder="Password" required>
+                        <input type="submit" name="submit" value="Registration" class="btn-find-class">
+                    </form>
+                    <div class="forgot">
+                        <a href="#popupLog">Already a member?</a>
+                    </div>
                 </div>
-                <div>
-                    <span>or</span>
-                </div>
-                <form action="" method="get" class="popform">
-                    <input type="text" name="subject" id="" placeholder="Email" required>
-                    <input type="password" name="address" id="" placeholder="Password" required>
-                    <input type="submit" name="submit" value="Login" class="btn-find-class">
-                </form>
-                <div class="forgot">
-                    <a href="">Forgot Password? /</a>
-                    <a href="">Not yet a member?</a>
-                </div>
+                <a class="popup-cerrar" href="#">X</a>
             </div>
-            <a class="popup-cerrar" href="#">X</a>
         </div>
-    </div>
-    <div class="modal-wrapper" id="popup">
-        <div class="popup-contenedor">
-            <h3>Sign Up</h3>
-            <div class="login">
-                <div class="log-fa btn-find-class">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <a href="" class="btn-fa">Sign in with Facebook</a>
+        <div class="modal-wrapper" id="popupLog">
+            <div class="popup-contenedor">
+                <h3>Login</h3>
+                <div class="login">
+                    <div class="log-fa btn-find-class">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <a href="" class="btn-fa">Sign in with Facebook</a>
+                    </div>
+                    <div>
+                        <span>or</span>
+                    </div>
+                    <form action="" method="get" class="popform">
+                        <input type="email" name="subject" id="" placeholder="Email" required>
+                        <input type="password" name="address" id="" placeholder="Password" required>
+                        <input type="submit" name="submit" value="Login" class="btn-find-class">
+                    </form>
+                    <div class="forgot">
+                        <a href="#popupPsw">Forgot Password? /</a>
+                        <a href="#popupReg">Not yet a member?</a>
+                    </div>
                 </div>
-                <div>
-                    <span>or</span>
-                </div>
-                <form action="" method="get" class="popform">
-                    <input type="text" name="subject" id="" placeholder="Email" required>
-                    <input type="password" name="address" id="" placeholder="Password" required>
-                    <input type="submit" name="submit" value="Login" class="btn-find-class">
-                </form>
-                <div class="forgot">
-                    <a href="">Forgot Password? /</a>
-                    <a href="">Not yet a member?</a>
-                </div>
+                <a class="popup-cerrar" href="#">X</a>
             </div>
-            <a class="popup-cerrar" href="#">X</a>
+        </div>
+        <div class="modal-wrapper" id="popupPsw">
+            <div class="popup-contenedor">
+                <h3>Forgot password</h3>
+                <div class="login">
+                    <div>
+                        <span>To retrieve your password, enter in the field below the e-mail address of your account.</span>
+                    </div>
+                    <form action="" method="get" class="popform">
+                        <input type="email" name="subject" id="" placeholder="Email" required>
+                        <input type="submit" name="submit" value="Send" class="btn-find-class">
+                    </form>
+                    <div class="forgot">
+                        <a href="#popupLog">Return to Sign-in</a>
+                    </div>
+                </div>
+                <a class="popup-cerrar" href="#">X</a>
+            </div>
         </div>
     </div>
 

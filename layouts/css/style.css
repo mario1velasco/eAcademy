@@ -210,7 +210,7 @@ header h1 {
     margin-bottom: 20px;
 }
 footer{
-    padding: 50px 10% 10px 10%;
+    padding: 50px 10% 0 10%;
 }
 .info{
     margin-bottom: 20px;
@@ -236,7 +236,7 @@ footer img{
     align-items: center;
     font-size: 18px;
 }
-#popupLog, #popup{
+#popupLog, #popupReg, #popupPsw{
     text-align: center;
     display: block;
 }

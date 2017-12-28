@@ -20,7 +20,7 @@
 
 .popup-contenedor {
   position: relative;
-  margin: 7% auto;
+  margin: 2% auto;
   padding: 30px 50px;
   background-color: #fafafa;
   color: #333;
@@ -62,7 +62,7 @@ a.popup-cerrar {
 
 .popupLog-contenedor {
   position: relative;
-  margin: 7% auto;
+  margin: 2% auto;
   padding: 30px 50px;
   background-color: #fafafa;
   color: #333;
@@ -71,6 +71,90 @@ a.popup-cerrar {
 }
 
 a.popupLog-cerrar {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #333;
+  padding: 7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color: #fff;
+}
+
+#popupReg {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -300px;
+}
+
+#popupReg:target {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 999;
+  transition: all 1s;
+}
+
+.popupReg-contenedor {
+  position: relative;
+  margin: 2% auto;
+  padding: 30px 50px;
+  background-color: #fafafa;
+  color: #333;
+  border-radius: 3px;
+  width: 50%;
+}
+
+a.popupReg-cerrar {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #333;
+  padding: 7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color: #fff;
+}
+
+#popupPsw {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -300px;
+}
+
+#popupPsw:target {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 999;
+  transition: all 1s;
+}
+
+.popupPsw-contenedor {
+  position: relative;
+  margin: 2% auto;
+  padding: 30px 50px;
+  background-color: #fafafa;
+  color: #333;
+  border-radius: 3px;
+  width: 50%;
+}
+
+a.popupPsw-cerrar {
   position: absolute;
   top: 3px;
   right: 3px;
