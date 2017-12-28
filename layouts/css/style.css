@@ -121,7 +121,7 @@ nav li {
 header {
     background-image: url(../images/bgSearch1600x330.jpg);
     background-repeat: no-repeat;
-    background-position:right;
+    background-position:right top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -190,4 +190,49 @@ header h1 {
 }
 .places-title{
     margin-bottom: 30px;
+}
+#teacher{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/becomeTeacher.jpg);
+    /* background-image: url(../images/becomeTeacher.jpg); */
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 5px rgb(53, 53, 53);
+}
+.fa-icon{
+    margin-bottom: 20px;
+}
+.teacher-title{
+    margin-bottom: 60px;
+}
+.teacher-title>div{
+    margin-bottom: 20px;
+}
+footer{
+    padding: 50px 10% 10px 10%;
+}
+.info{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(201, 201, 201); 
+}
+.info h4{
+    margin-bottom: 15px;
+}
+.info li{
+    display: inline-block;
+    width: 15%;
+}
+.info a{
+    color: rgb(173, 173, 173);
+}
+footer img{
+    height: 40px;
+    padding-right: 10px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }
