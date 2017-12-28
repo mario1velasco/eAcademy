@@ -188,3 +188,6 @@ header h1 {
     flex-direction: row;
     margin-bottom: 20px;
 }
+.places-title{
+    margin-bottom: 30px;
+}
