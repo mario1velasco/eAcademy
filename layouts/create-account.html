@@ -9,12 +9,13 @@
   <link href="css/create-account.css" rel="stylesheet">
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU"
     crossorigin="anonymous">
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script>
-    $(function () {
-      $("#includedContent").load("./popup.html");
-      // alert("hola");
-    });
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $("#contain").load("./popup.html");
+        alert("hola");
+    })
+    
   </script>
   <title>Create account</title>
 
@@ -96,7 +97,7 @@
       </script>, eAcademy company.
     </div>
   </footer>
-  <div id="includedContent"></div>
+  <div id="contain"></div>
 </body>
 
 </html>
