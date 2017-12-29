@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #393939;
+  width: 10px auto;
+  /*#027BD6;*/
+}
+
+header,
+section {
+  padding: 50px 10% 50px 10%;
+}
+
+a {
+  box-sizing: border-box;
+  color: #4b4b4b;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 25px;
+  z-index: 100
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+form {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+input,
+select {
+  margin-left: 3px;
+  box-sizing: border-box;
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 5px;
+  /* height: 32px; */
+}
+
+input:hover {
+  border: 1px solid rgb(31, 31, 31);
+}
+
+select:hover {
+  border: 1px solid rgb(31, 31, 31);
+}
+
+input {
+  padding: 0 10px;
+  width: 160px;
+}
+
+select {
+  color: #707070;
+  padding: 7px 2px 5px 10px;
+  width: 100px;
+  line-height: 26px;
+  background: white;
+  ;
+}
+
+nav .btn-submit {
+  width: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.nav-links a {
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.btn-find-class {
+  color: white;
+  background-color: #046381;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+footer {
+  padding: 50px 10% 0 10%;
+}
+
+.info {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.info h4 {
+  margin-bottom: 15px;
+}
+
+.info li {
+  display: inline-block;
+  width: 15%;
+}
+
+.info a {
+  color: rgb(173, 173, 173);
+}
+
+footer img {
+  height: 40px;
+  padding-right: 10px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}

@@ -1,0 +1,107 @@
+header {
+    padding-top: 110px;
+    background-image: url(../images/bgSearch1600x400.jpg);
+    background-repeat: no-repeat;
+    background-position:right top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header h1 {
+    color:white;
+}
+.header-h1{
+    padding-bottom: 40px;
+}
+
+.btn-find-teacher{
+    color: #046381;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-find-teacher:hover{
+    background:#459fbb;
+    color:white;
+}
+.header-topics{
+    margin-bottom: 30px;
+}
+.materials{
+    display: inline-block;
+    width: 30%;
+    animation-delay: 2s;
+}
+.materials ul{
+    margin-bottom: 20px;
+}
+.materials li{
+    margin-top: 10px;
+}
+#help{
+    background-color: #046381;
+    color: white;
+}
+.help-title{
+    margin-bottom: 40px;
+}
+
+.help-anim{
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+}
+.help-anim h2{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    text-align: center;
+    font-size: 32px;
+}
+.number-line{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.places-title{
+    margin-bottom: 30px;
+}
+#teacher{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/becomeTeacher.jpg);
+    /* background-image: url(../images/becomeTeacher.jpg); */
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 5px rgb(53, 53, 53);
+}
+.fa-icon{
+    margin-bottom: 20px;
+}
+.teacher-title{
+    margin-bottom: 60px;
+}
+.teacher-title>div{
+    margin-bottom: 20px;
+}
+
+
+#popupLog, #popupReg, #popupPsw{
+    text-align: center;
+    display: block;
+}
+.popform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.log-fa a{
+    padding-left: 5px;
+    color: white;
+}
