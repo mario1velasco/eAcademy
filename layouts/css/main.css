@@ -10,7 +10,10 @@ body {
   /*#027BD6;*/
 }
 
-header,
+header{
+  padding: 90px 10% 50px 10%;
+
+}
 section {
   padding: 50px 10% 50px 10%;
 }
@@ -68,13 +71,16 @@ form {
 }
 
 input,
-select {
+select,
+textarea {
   margin-left: 3px;
   box-sizing: border-box;
-  color: #999;
+  color: rgb(97, 97, 97);
   border: 1px solid #999;
   border-radius: 5px;
-  /* height: 32px; */
+  background: white;
+  height: 38px;
+  padding-left: 10px;
 }
 
 input:hover {
@@ -90,14 +96,6 @@ input {
   width: 160px;
 }
 
-select {
-  color: #707070;
-  padding: 7px 2px 5px 10px;
-  width: 100px;
-  line-height: 26px;
-  background: white;
-  ;
-}
 
 nav .btn-submit {
   width: 80px;
@@ -127,6 +125,9 @@ nav li {
   background-color: #046381;
   padding: 10px 20px;
   border-radius: 20px;
+}
+.btn-find-class:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -161,4 +162,15 @@ footer img {
   display: flex;
   align-items: center;
   font-size: 18px;
+}
+
+.log-fa{
+  background-color: #4267b2;
+}
+.login input,a,div{
+  margin-bottom: 5px;
+}
+.log-fa a{
+  padding-left: 5px;
+  color: white;
 }

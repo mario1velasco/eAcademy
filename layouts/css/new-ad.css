@@ -1,0 +1,61 @@
+nav {
+  /* position: fixed; */
+  justify-content: space-around;
+}
+
+header,
+section {
+  background-color: #dbdbdb;
+  padding-top: 100px;
+}
+section *{
+  margin-bottom: 10px;
+}
+.number-list {
+  text-align: center;
+}
+
+.number-list ul{
+  display: flex;
+}
+
+.number-list li {
+  width: 90px;
+}
+
+.number-list h5 {
+  color: #046381;
+  border: 2px solid #046381;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.select {
+  /* display: flex; */
+  /* align-items: center; */
+  display: inline-block;
+  color: #046381;
+  width: 140px;
+}
+
+.select h5 {
+  border: 2px solid #046381;
+  background-color: #046381;
+  color: white;
+}
+.title{
+  padding-bottom: 30px;
+}
+.done h5{
+  border: 2px solid #dbdbdb;
+  background-color: #dbdbdb;
+  color: white;  
+}
+textarea{
+  width:90%;
+  height: 100px;
+}
