@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/control-panel.css" rel="stylesheet">
     <link href="css/my-profile.css" rel="stylesheet">
     <!-- <link href="css/fontawesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU"
@@ -49,22 +50,95 @@
         </div>
         <div class="bot-nav">
             <ul>
-                <li class="select"><a href="">My profile</a></li>
-                <li><a href="">My advertisements</a></li>
-                <li><a href="">My requestes</a></li>
+                <li class="select">
+                    <a href="./my-profile.html">My profile</a>
+                </li>
+                <li>
+                    <a href="./my-ads.html">My advertisements</a>
+                </li>
+                <li>
+                    <a href="./my-requests.html">My requests</a>
+                </li>
             </ul>
         </div>
     </nav>
     <header>
         <div>
             <div class="header-h1">
-                <h1>Find</h1>
-                <h1>your ideal instructor</h1>
+                <h1>My profile</h1>
+                <h2>Update and modify it.</h2>
             </div>
-            
         </div>
     </header>
-    
+    <section id="personal">
+        <h3>Personal details:</h3>
+        <!-- <div> -->
+        <form action="" method="get" class="per-details">
+            <input type="text" name="firstName" id="" placeholder="First Name" required>
+            <input type="text" name="secondName" id="" placeholder="Second Name" required>
+            <input type="email" name="subject" id="" placeholder="Email" required>
+            <input type="tel" name="telefone" id="" placeholder="Telephone">
+            <input type="submit" name="submit" value="Modify" class="btn-find-class">
+        </form>
+        <!-- </div> -->
+    </section>
+    <section id="address">
+        <h3> Address: </h3>
+        <form action="" method="get" class="per-details">
+            <label for="address">Put your exact address</label>
+            <input type="text" name="add" id="address" placeholder="Address" required>
+            <input type="submit" name="submit" value="Confirm" class="btn-find-class">
+        </form>
+    </section>
+    <section id="photo">
+        <h3>Profile photo:</h3>
+        <div class="per-details">
+            <img src="./images/noPhoto.jpg" alt="">
+            <!-- <button class="btn-find-class">Select & update</button> -->
+            <input type="submit" name="submit" value="Select & update" class="btn-find-class">
+        </div>
+    </section>
+    <section id="notifications">
+        <h3>Notifications:</h3>
+        <form action="" method="get" class="per-details levels">
+            <div class="one-level">
+                <input type="checkbox" name="" id="">
+                <span>I want notifications by email.</span> 
+            </div>
+            <div class="one-level">
+                <input type="checkbox" name="" id="">
+                <span>I want notifications by sms.</span> 
+            </div>
+            <input type="submit" name="submit" value="Confirm" class="btn-find-class">
+        </form>
+    </section>
+    <section id="psw">
+        <h3>Password:</h3>
+        <form action="" method="get" class="per-details">
+                <span>I want to change my password:</span>
+                <input type="password" name="firstName" id="" placeholder="Old password" required>
+                <input type="password" name="secondName" id="" placeholder="New password" required>
+                <input type="password" name="subject" id="" placeholder="Repeat password" required>
+                <input type="submit" name="submit" value="Modify" class="btn-find-class">
+            </form>
+    </section>
+    <section id="delete">
+            <h3>Delete Account:</h3>
+            <form action="" method="get" class="per-details levels">
+                <h5>Attention! Once deleted you cannot get your account bak.</h5>
+                <div class="one-level">
+                    <input type="checkbox" name="" id="">
+                    <span>I want to delete my account.</span> 
+                </div>
+                <div class="one-level">
+                    <input type="checkbox" name="" id="">
+                    <span>I want to dellete all my Ads.</span> 
+                </div>
+                <span>Introduce your password to confirm:</span>
+                <input type="password" name="firstName" id="" placeholder="Password" required>
+                <input type="submit" name="submit" value="Confirm" class="btn-find-class">
+            </form>
+        </section>
     <footer>
         <div class="info">
             <h4>About</h4>
@@ -90,7 +164,7 @@
             </script>, eAcademy company.
         </div>
     </footer>
-   
+
 
 </body>
 
