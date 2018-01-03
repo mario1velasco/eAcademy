@@ -8,14 +8,16 @@ section {
   background-color: #dbdbdb;
   padding-top: 100px;
 }
-section *{
+
+section * {
   margin-bottom: 10px;
 }
+
 .number-list {
   text-align: center;
 }
 
-.number-list ul{
+.number-list ul {
   display: flex;
 }
 
@@ -47,15 +49,34 @@ section *{
   background-color: #046381;
   color: white;
 }
-.title{
+
+.title {
   padding-bottom: 30px;
 }
-.done h5{
+
+.done h5 {
   border: 2px solid #dbdbdb;
   background-color: #dbdbdb;
-  color: white;  
+  color: white;
 }
-textarea{
-  width:90%;
+
+textarea {
+  width: 90%;
   height: 100px;
+}
+
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one-level {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.one-level input {
+  width: 50px;
 }

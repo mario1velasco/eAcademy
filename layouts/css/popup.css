@@ -1,10 +1,12 @@
 #popup {
+  /* display: none; */
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
 }
 
 #popup:target {
+  /* display: initial; */
   visibility: visible;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
@@ -41,12 +43,14 @@ a.popup-cerrar {
 }
 
 #popupLog {
+  /* display: none; */
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
 }
 
 #popupLog:target {
+  /* display: initial; */
   visibility: visible;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
@@ -83,12 +87,14 @@ a.popupLog-cerrar {
 }
 
 #popupReg {
+  /* display: none; */
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
 }
 
 #popupReg:target {
+  /* display: initial; */
   visibility: visible;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);
@@ -125,12 +131,14 @@ a.popupReg-cerrar {
 }
 
 #popupPsw {
+  /* display: none; */
   visibility: hidden;
   opacity: 0;
   margin-top: -300px;
 }
 
 #popupPsw:target {
+  /* display: initial; */
   visibility: visible;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.8);

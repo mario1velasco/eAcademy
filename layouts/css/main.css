@@ -49,14 +49,16 @@ nav {
   width: 100%;
   position: fixed;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 25px;
+  padding: 10px 0 10px 0;
   z-index: 100
 }
 
 .logo {
   display: flex;
+  margin-left: 10px;
   align-items: center;
   font-size: 18px;
 }
@@ -98,12 +100,18 @@ input {
 
 
 nav .btn-submit {
-  width: 80px;
+  background:white;
+  border: none;
+  color: rgb(97, 97, 97);
+  padding-left: 5px;
+}
+nav .btn-submit:hover {
+  color: #046381;
 }
 
 nav ul {
   list-style-type: none;
-  margin-right: 30px;
+  /* margin-right: 10px; */
 }
 
 nav li {
@@ -128,6 +136,23 @@ nav li {
 }
 .btn-find-class:hover {
   text-decoration: underline;
+}
+.connect{
+  /* display: none; */
+  margin-right: 10px;
+}
+.connect a{
+  /* color: #046381;
+  border: 2px solid #046381; */
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+.profile-options{
+  display: none;
 }
 
 footer {
