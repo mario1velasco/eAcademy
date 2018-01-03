@@ -117,6 +117,9 @@ nav ul {
 nav li {
   display: inline-block;
 }
+.nav-links {
+  display: flex;
+}
 
 .nav-links a {
   box-sizing: border-box;
