@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>eAcademy: Find your private teacher</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/slide.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <!-- <link href="css/fontawesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU"
+        crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/logoPoligono.png" alt="logo">
+            <span>e
+                <strong>Academy</strong>
+            </span>
+        </div>
+        <div class="nav-search">
+            <form action="" method="get" class="search1">
+                <select name="method" class="select-search" required>
+                    <option value="online">Online</option>
+                    <option value="person">In person</option>
+                    <option value="group">In a group</option>
+                </select>
+                <input type="text" name="subject" id="" placeholder="Choose a subject" required>
+                <input type="text" name="address" id="" placeholder="Address or Postcode" required>
+                <button type="submit" class="btn-submit">
+                    <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="#popupReg" class="connect-js sign-js">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#popupLog" class="connect-js">Log In</a>
+                </li>
+                <li>
+                    <a href="./create-account.html">Help</a>
+                </li>
+                <li>
+                    <a href="./new-ad-step1.html" class="btn-find-class">Give lessons</a>
+                </li>
+            </ul>
+            <div class="connect">
+                <a href="./my-profile.html" class="btn-find-class">M</a>
+                <div class="profile-options">
+                    <ul>
+                        <li>My Profile</li>
+                        <li>My Ads</li>
+                        <li>My requests</li>
+                        <li>Create an Ad</li>
+                        <li>Log out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="demo_box">
+            <span class="pop_ctrl">
+                <i class="fa fa-bars fa-2x"></i>
+            </span>
+            <ul id="demo_ul">
+                <li class="demo_li">
+                    <a href="http://www.gucheen.pro">
+                        <div>
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <a href="http://blog.gucheen.pro">
+                        <div>
+                            <i class="fa fa-cloud"></i>
+                        </div>
+                        <div>Cloud</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-cog"></i>
+                    </div>
+                    <div>settings</div>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div>E-mail</div>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div>Clock</div>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-folder"></i>
+                    </div>
+                    <div>Files</div>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+                    <div>Favourites</div>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <div>Mobile</div>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-power-off"></i>
+                    </div>
+                    <div>Exit</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.popmenu.js"></script>
+    <script>
+        $(function () {
+            $('#demo_box').popmenu();            
+        })
+    </script>
+</body>
+
+</html>

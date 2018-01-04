@@ -1,0 +1,46 @@
+/* #container {
+  max-width: 480px;
+  width: 100%;
+} */
+
+#demo_box {
+  width: 70px;  
+  display: none;
+  /* margin: 20px auto; */
+}
+#demo_li{
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.fa {
+  /* font-size: 40px; */
+  /* line-height: 70px; */
+}
+
+.fa-bars {
+  color: #046381;
+}
+
+/* pre {
+  font-family: Consolas, Liberation Mono, Courier, monospace;
+  font-size: 13px;
+} */
+
+@media screen and (orientation: portrait) {
+  pre {
+      overflow-x: scroll;
+  }
+}
+@media (max-width: 960px) {
+  #demo_box{
+    display: block;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-search{
+    display: none;
+  }
+  
+}
