@@ -140,11 +140,12 @@ nav li {
 .btn-find-class:hover {
   text-decoration: underline;
 }
-.connect{
+#connect{
   /* display: none; */
+  width: 70px;  
   margin-right: 10px;
 }
-.connect a{
+#connect a{
   /* color: #046381;
   border: 2px solid #046381; */
   border-radius: 50%;

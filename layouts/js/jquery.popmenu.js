@@ -4,13 +4,13 @@
 
         var settings = $.extend({
             'controller': true,
-            'width': '60px',
+            'width': '70px',
             'background': '#046381',
             'focusColor': '#999',
             'borderRadius': '10px',
-            'top': '0',
+            'top': '-10',
             'left': '0',
-            'iconSize': '60px',
+            'iconSize': '70px',
             'color': '#fff',
             'border': '0px'
         }, options);
@@ -58,7 +58,7 @@
             });
             tar_ctrl.click(function (e) {
                 e.preventDefault();
-                tar_body.show('fast');
+                tar_body.show('slow');
                 $(document).mouseup(function (e) {
                     var _con = tar_body;
                     if (!_con.is(e.target) && _con.has(e.target).length === 0) {

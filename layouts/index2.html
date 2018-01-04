@@ -16,7 +16,6 @@
         crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-        
     </style>
 </head>
 
@@ -57,18 +56,51 @@
                     <a href="./new-ad-step1.html" class="btn-find-class">Give lessons</a>
                 </li>
             </ul>
-            <div class="connect">
-                <a href="./my-profile.html" class="btn-find-class">M</a>
-                <div class="profile-options">
-                    <ul>
-                        <li>My Profile</li>
-                        <li>My Ads</li>
-                        <li>My requests</li>
-                        <li>Create an Ad</li>
-                        <li>Log out</li>
-                    </ul>
-                </div>
+            <div id="connect">
+                <a href="#" class="btn-find-class pop_ctrl">M</a>
+                <ul id="demo_ul">
+                    <li class="demo_li">
+                        <a href="http://www.gucheen.pro">
+                            <div>
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <div>My Profile</div>
+                        </a>
+                    </li>
+                    <li class="demo_li">
+                        <a href="http://blog.gucheen.pro">
+                            <div>
+                                <i class="fa fa-cloud"></i>
+                            </div>
+                            <div>My Ads</div>
+                        </a>
+                    </li>
+                    <li class="demo_li">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div>My Request</div>
+                    </li>
+                    <li class="demo_li">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div>Create Ad</div>
+                    </li>
+                    <li class="demo_li">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div>Log Out</div>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <div id="pop-search">
+            <a href="#popupSearch" class="btn-submit">
+                <input type="text" name="" id="" placeholder="search">
+                <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+            </a>
         </div>
         <div id="demo_box">
             <span class="pop_ctrl">
@@ -136,12 +168,126 @@
             </ul>
         </div>
     </nav>
-    
+
+
+    <footer>
+        <div class="info">
+            <h4>About</h4>
+            <ul>
+                <li>
+                    <a href="">Who are we?</a>
+                </li>
+                <li>
+                    <a href="">Need Help?</a>
+                </li>
+                <li>
+                    <a href="">All materials</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <img src="./images/logoPoligono.png" alt="logo"> &copy; 2016
+            <script>
+                new Date().getFullYear() > 2016 && document.write("-" + new Date().getFullYear());
+            </script>, eAcademy company.
+        </div>
+    </footer>
+    <div>
+        <div class="modal-wrapper" id="popupReg">
+            <div class="popup-contenedor">
+                <h3>Sign Up</h3>
+                <div class="login">
+                    <div class="log-fa btn-find-class">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <a href="" class="btn-fa">Sign in with Facebook</a>
+                    </div>
+                    <div>
+                        <span>or</span>
+                    </div>
+                    <form action="" method="get" class="popform">
+                        <input type="text" name="firstName" id="" placeholder="First Name" required>
+                        <input type="text" name="secondName" id="" placeholder="Second Name" required>
+                        <input type="email" name="subject" id="" placeholder="Email" required>
+                        <input type="password" name="address" id="" placeholder="Password" required>
+                        <input type="submit" name="submit" value="Registration" class="btn-find-class">
+                    </form>
+                    <div class="forgot">
+                        <a href="#popupLog">Already a member?</a>
+                    </div>
+                </div>
+                <a class="popup-cerrar" href="#">X</a>
+            </div>
+        </div>
+        <div class="modal-wrapper" id="popupLog">
+            <div class="popup-contenedor">
+                <h3>Login</h3>
+                <div class="login">
+                    <div class="log-fa btn-find-class">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <a href="" class="btn-fa">Sign in with Facebook</a>
+                    </div>
+                    <div>
+                        <span>or</span>
+                    </div>
+                    <form action="" method="get" class="popform">
+                        <input type="email" name="subject" id="" placeholder="Email" required>
+                        <input type="password" name="address" id="" placeholder="Password" required>
+                        <input type="submit" name="submit" value="Login" class="btn-find-class">
+                    </form>
+                    <div class="forgot">
+                        <a href="#popupPsw">Forgot Password? /</a>
+                        <a href="#popupReg">Not yet a member?</a>
+                    </div>
+                </div>
+                <a class="popup-cerrar" href="#">X</a>
+            </div>
+        </div>
+        <div class="modal-wrapper" id="popupPsw">
+            <div class="popup-contenedor">
+                <h3>Forgot password</h3>
+                <div class="login">
+                    <div>
+                        <span>To retrieve your password, enter in the field below the e-mail address of your account.</span>
+                    </div>
+                    <form action="" method="get" class="popform">
+                        <input type="email" name="subject" id="" placeholder="Email" required>
+                        <input type="submit" name="submit" value="Send" class="btn-find-class">
+                    </form>
+                    <div class="forgot">
+                        <a href="#popupLog">Return to Sign-in</a>
+                    </div>
+                </div>
+                <a class="popup-cerrar" href="#">X</a>
+            </div>
+        </div>
+        <div class="modal-wrapper" id="popupSearch">
+            <div class="popup-contenedor">
+                <h3>Search a tutor</h3>
+                <div class="login">
+                    <form action="" method="get" class="popform">
+                        <select name="method" class="select-search" required>
+                            <option value="online">Online</option>
+                            <option value="person">In person</option>
+                            <option value="group">In a group</option>
+                        </select>
+                        <input type="text" name="subject" id="" placeholder="Choose a subject" required>
+                        <input type="text" name="address" id="" placeholder="Address or Postcode" required>
+                        <input type="submit" name="submit" value="Send" class="btn-find-class">
+                    </form>
+                </div>
+                <a class="popup-cerrar" href="#">X</a>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.popmenu.js"></script>
     <script>
         $(function () {
-            $('#demo_box').popmenu();            
+            $('#demo_box').popmenu();
+            $('#connect').popmenu();
         })
     </script>
 </body>
