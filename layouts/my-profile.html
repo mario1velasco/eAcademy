@@ -30,22 +30,53 @@
                     <li>
                         <a href="./help.html">Help</a>
                     </li>
-                    <li>
+                    <li class="padi-left">
                         <a href="./new-ad-step1.html" class="btn-find-class">Give lessons</a>
                     </li>
                 </ul>
-                <div class="connect">
-                    <a href="./my-profile.html" class="btn-find-class">M</a>
-                    <div class="profile-options">
-                        <ul>
-                            <li>My Profile</li>
-                            <li>My Ads</li>
-                            <li>My requests</li>
-                            <li>Create an Ad</li>
-                            <li>Log out</li>
+                <div id="connect"  class="padi-left">
+                        <a href="#" class="btn-find-class pop_ctrl">M</a>
+                        <ul id="demo_ul">
+                            <li class="demo_li">
+                                <a href="./index.html">
+                                    <div>
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <div>Inicio</div>
+                                </a>
+                            </li>
+                            <li class="demo_li">
+                                <a href="./my-ads.html">
+                                    <div>
+                                        <i class="fa fa-cloud"></i>
+                                    </div>
+                                    <div>My Ads</div>
+                                </a>
+                            </li>
+                            <li class="demo_li">
+                                <a href="./my-requests.html">
+                                    <div>
+                                        <i class="fa fa-cog"></i>
+                                    </div>
+                                    <div>My Request</div>
+                                </a>
+                            </li>
+                            <li class="demo_li">
+                                <a href="./new-ad-step1.html">
+                                    <div>
+                                        <i class="fa fa-cog"></i>
+                                    </div>
+                                    <div>Create Ad</div>
+                                </a>
+                            </li>
+                            <li class="demo_li">
+                                <div>
+                                    <i class="fa fa-cog"></i>
+                                </div>
+                                <div>Log Out</div>
+                            </li>
                         </ul>
                     </div>
-                </div>
             </div>
         </div>
         <div class="bot-nav">
@@ -164,7 +195,14 @@
             </script>, eAcademy company.
         </div>
     </footer>
-
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.popmenu.js"></script>
+    <script>
+        $(function () {
+            // $('#demo_box').popmenu();
+            $('#connect').popmenu();
+        })
+    </script>
 
 </body>
 

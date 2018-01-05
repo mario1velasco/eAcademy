@@ -13,7 +13,10 @@ nav {
 
 .nav-links {
   display: flex;
-  width: 220px;
+  /* width: 250px; */
+}
+.padi-left{
+  padding-left: 10px;
 }
 
 .bot-nav {
@@ -52,4 +55,13 @@ header {
   background-image: linear-gradient(113deg, #0ab0e2, #046381);
   box-sizing: border-box;
   padding-top: 120px;
+}
+
+#connect>a {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
 }

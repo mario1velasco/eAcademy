@@ -41,7 +41,7 @@
             </form>
         </div>
         <div class="nav-links">
-            <ul>
+            <ul class="nav-links-ul">
                 <li>
                     <a href="#popupReg" class="connect-js sign-js">Sign Up</a>
                 </li>
@@ -55,36 +55,157 @@
                     <a href="./new-ad-step1.html" class="btn-find-class">Give lessons</a>
                 </li>
             </ul>
-            <div class="connect">
-                <a href="./my-profile.html" class="btn-find-class">M</a>
-                <div class="profile-options">
-                    <ul>
-                        <li>My Profile</li>
-                        <li>My Ads</li>
-                        <li>My requests</li>
-                        <li>Create an Ad</li>
-                        <li>Log out</li>
-                    </ul>
-                </div>
+            <div id="connect">
+                <a href="#" class="btn-find-class pop_ctrl">M</a>
+                <ul id="demo_ul">
+                    <li class="demo_li">
+                        <a href="./my-profile.html">
+                            <div>
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <div>My Profile</div>
+                        </a>
+                    </li>
+                    <li class="demo_li">
+                        <a href="./my-ads.html">
+                            <div>
+                                <i class="fa fa-cloud"></i>
+                            </div>
+                            <div>My Ads</div>
+                        </a>
+                    </li>
+                    <li class="demo_li">
+                        <a href="./my-requests.html">
+                            <div>
+                                <i class="fa fa-cog"></i>
+                            </div>
+                            <div>My Request</div>
+                        </a>
+                    </li>
+                    <li class="demo_li">
+                        <a href="./new-ad-step1.html">
+                            <div>
+                                <i class="fa fa-cog"></i>
+                            </div>
+                            <div>Create Ad</div>
+                        </a>
+                    </li>
+                    <li class="demo_li">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div>Log Out</div>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <div id="pop-search">
+            <a href="#popupSearch" class="btn-submit">
+                <input type="text" name="" id="" placeholder="search">
+                <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div id="demo_box">
+            <span class="pop_ctrl">
+                <i class="fa fa-bars fa-2x"></i>
+            </span>
+            <ul id="demo_ul">
+                <li class="demo_li">
+                    <a href="./my-profile.html">
+                        <div>
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div>My Profile</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <a href="./my-ads.html">
+                        <div>
+                            <i class="fa fa-cloud"></i>
+                        </div>
+                        <div>My Ads</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <a href="./my-requests.html">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div>My Request</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <a href="./new-ad-step1.html">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div>Create Ad</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-power-off"></i>
+                    </div>
+                    <div>Log Out</div>
+                </li>
+                <li class="demo_li">
+                    <a href="#popupReg">
+                        <div>
+                            <i class="fa fa-folder"></i>
+                        </div>
+                        <div>Sign In</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <a href="#popupLog">
+                        <div>
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                        <div>Log In</div>
+                    </a>
+                </li>
+                <li class="demo_li">
+                    <div>
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <div>Help</div>
+                </li>
+                <li class="demo_li">
+                    <a href="./new-ad-step1.html">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <div>Create Ad</div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
     <header>
-        <div>
+        <div class="header-max">
             <div class="header-h1">
-                <h1>Find</h1>
-                <h1>your ideal instructor</h1>
+                <h1 class="ani1 animated fadeInLeft">Find</h1>
+                <h1 class="ani2 animated fadeInRight">your ideal instructor</h1>
             </div>
             <form action="" method="get" class="search2">
-                <select name="method" class="select-search">
+                <select name="method" class="select-search ani3 animated bounceInLeft">
                     <option value="online">Online</option>
                     <option value="person">In person</option>
                     <option value="group">In a group</option>
                 </select>
-                <input type="text" name="subject" id="" placeholder="Choose a subject" required>
-                <input type="text" name="address" id="" placeholder="Address or Postcode" required>
-                <input type="submit" value="Find a teacher" class="btn-find-teacher">
+                <input type="text" name="subject" id="" class="ani3 animated bounceInDown" placeholder="Choose a subject" required>
+                <input type="text" name="address" id="" class="ani3 animated bounceInRight" placeholder="Address or Postcode" required>
+                <input type="submit" value="Find a teacher" class="btn-find-teacher ani4 animated lightSpeedIn">
             </form>
+        </div>
+        <div class="header-min">
+            <div class="header-h1">
+                <h1 class="ani1 animated fadeInLeft">Find</h1>
+                <h1 class="ani2 animated fadeInRight">your ideal instructor</h1>
+            </div>
+            <a href="#popupSearch">
+                <input type="text" name="subject" id="" class="ani3 animated bounceInDown" placeholder="Click to search" required>
+            </a>
         </div>
     </header>
     <section class="places" id="slideshow">
@@ -121,35 +242,35 @@
 
     <section class="container" id="help">
         <div class="help-title">
-            <h1>Get a tutor</h1>
-            <h1>is easier than you think</h1>
+            <h1 class="ani1 animated fadeInLeft">Get a tutor</h1>
+            <h1 class="ani2 animated fadeInRight">is easier than you think</h1>
         </div>
         <div class="help-numbers">
-            <article class="help-anim">
+            <article class="help-anim ani2 animated fadeInRight">
                 <div class="number-line">
                     <h2>1</h2>
-                    <svg height="28" width="150">
-                        <line x1="6" y1="28" x2="150" y2="28" style="stroke:white;stroke-width:4" />
+                    <svg height="28" width="200">
+                        <line x1="6" y1="28" x2="200" y2="28" style="stroke:white;stroke-width:4" />
                     </svg>
                 </div>
                 <h4>Search what you want to learn</h4>
                 <div>Over 200 skills and growing.</div>
             </article>
-            <article class="help-anim">
+            <article class="help-anim ani3 animated fadeInRight">
                 <div class="number-line">
                     <h2>2</h2>
-                    <svg height="28" width="150">
-                        <line x1="6" y1="28" x2="150" y2="28" style="stroke:white;stroke-width:4" />
+                    <svg height="28" width="200">
+                        <line x1="6" y1="28" x2="200" y2="28" style="stroke:white;stroke-width:4" />
                     </svg>
                 </div>
                 <h4>Choose the tutor you want</h4>
                 <div>Find the right one for you.</div>
             </article>
-            <article class="help-anim">
+            <article class="help-anim ani4 animated fadeInRight">
                 <div class="number-line">
                     <h2>3</h2>
-                    <svg height="28" width="150">
-                        <line x1="6" y1="28" x2="150" y2="28" style="stroke:white;stroke-width:4" />
+                    <svg height="28" width="200">
+                        <line x1="6" y1="28" x2="200" y2="28" style="stroke:white;stroke-width:4" />
                     </svg>
                 </div>
                 <h4>Book your lesson in one click</h4>
@@ -410,7 +531,33 @@
                 <a class="popup-cerrar" href="#">X</a>
             </div>
         </div>
+        <div class="modal-wrapper" id="popupSearch">
+            <div class="popup-contenedor">
+                <h3>Search a tutor</h3>
+                <div class="login">
+                    <form action="" method="get" class="popform">
+                        <select name="method" class="select-search" required>
+                            <option value="online">Online</option>
+                            <option value="person">In person</option>
+                            <option value="group">In a group</option>
+                        </select>
+                        <input type="text" name="subject" id="" placeholder="Choose a subject" required>
+                        <input type="text" name="address" id="" placeholder="Address or Postcode" required>
+                        <input type="submit" name="submit" value="Send" class="btn-find-class">
+                    </form>
+                </div>
+                <a class="popup-cerrar" href="#">X</a>
+            </div>
+        </div>
     </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.popmenu.js"></script>
+    <script>
+        $(function () {
+            $('#demo_box').popmenu();
+            $('#connect').popmenu();
+        })
+    </script>
 
 </body>
 

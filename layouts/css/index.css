@@ -2,21 +2,40 @@ header {
     padding-top: 110px;
     background-image: url(../images/bgSearch1600x400.jpg);
     background-repeat: no-repeat;
-    background-position:right top;
+    background-position: right top;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+.header-min{
+    display: none;
+}
+.ani1 {
+    animation-delay: 1s;
+}
+
+.ani2 {
+    animation-delay: 2s;
+}
+
+.ani3 {
+    animation-delay: 3s;
+}
+
+.ani4 {
+    animation-delay: 4s;
+}
 
 header h1 {
-    color:white;
+    color: white;
 }
-.header-h1{
+
+.header-h1 {
     padding-bottom: 40px;
 }
 
-.btn-find-teacher{
+.btn-find-teacher {
     color: #046381;
     background-color: white;
     font-weight: bold;
@@ -24,38 +43,45 @@ header h1 {
     border-radius: 20px;
 }
 
-.btn-find-teacher:hover{
-    background:#459fbb;
-    color:white;
+.btn-find-teacher:hover {
+    background: #459fbb;
+    color: white;
 }
-.header-topics{
+
+.header-topics {
     margin-bottom: 30px;
 }
-.materials{
+
+.materials {
     display: inline-block;
     width: 30%;
-    animation-delay: 2s;
+    animation-delay: 4s;
 }
-.materials ul{
+
+.materials ul {
     margin-bottom: 20px;
 }
-.materials li{
+
+.materials li {
     margin-top: 10px;
 }
-#help{
+
+#help {
     background-color: #046381;
     color: white;
 }
-.help-title{
+
+.help-title {
     margin-bottom: 40px;
 }
 
-.help-anim{
+.help-anim {
     width: 31%;
     display: inline-block;
     vertical-align: top;
 }
-.help-anim h2{
+
+.help-anim h2 {
     border: 2px solid white;
     border-radius: 50%;
     width: 36px;
@@ -64,41 +90,84 @@ header h1 {
     text-align: center;
     font-size: 32px;
 }
-.number-line{
+
+.number-line {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
 }
-.places-title{
+
+.places-title {
     margin-bottom: 30px;
 }
-#teacher{
+
+#teacher {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/becomeTeacher.jpg);
     /* background-image: url(../images/becomeTeacher.jpg); */
     background-repeat: no-repeat;
-    background-position:right;
+    background-position: right;
     background-size: cover;
     color: white;
     text-shadow: 0 0 5px rgb(53, 53, 53);
 }
-.fa-icon{
+
+.fa-icon {
     margin-bottom: 20px;
 }
-.teacher-title{
+
+.teacher-title {
     margin-bottom: 60px;
 }
-.teacher-title>div{
+
+.teacher-title>div {
     margin-bottom: 20px;
 }
 
-
-#popupLog, #popupReg, #popupPsw{
+#popupLog,
+#popupReg,
+#popupPsw {
     text-align: center;
     display: block;
 }
-.popform{
+
+.popform {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+@media (max-width: 970px) {
+    #slideshow {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    header{
+        background-image: none;
+        background-color: #046381;
+    }
+    .header-max {
+        display: none;
+    }
+    .header-min{
+        display: block;
+
+        color: rgba(255,255,255,0.9);
+        text-shadow: 0 0 15px #000;
+    }
+    .header-min input{
+        width: 250px;
+    }
+
+    .help-numbers{
+        display: flex;
+        flex-direction: column;
+    }
+    .help-anim{
+        width: 90%;
+    }
+    .materials {
+        width: 45%;
+    }
+}

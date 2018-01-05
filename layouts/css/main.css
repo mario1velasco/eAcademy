@@ -9,10 +9,10 @@ body {
   width: 10px auto;
 }
 
-header{
+header {
   padding: 90px 10% 50px 10%;
-
 }
+
 section {
   padding: 50px 10% 50px 10%;
 }
@@ -98,13 +98,13 @@ input {
   width: 160px;
 }
 
-
 nav .btn-submit {
-  background:white;
+  background: white;
   border: none;
   color: rgb(97, 97, 97);
   padding-left: 5px;
 }
+
 nav .btn-submit:hover {
   color: #046381;
 }
@@ -117,11 +117,12 @@ nav ul {
 nav li {
   display: inline-block;
 }
+
 .nav-links {
   display: flex;
 }
 
-.nav-links a {
+.nav-links-ul a {
   box-sizing: border-box;
   font-size: 14px;
   margin-right: 8px;
@@ -137,17 +138,17 @@ nav li {
   padding: 10px 20px;
   border-radius: 20px;
 }
+
 .btn-find-class:hover {
   text-decoration: underline;
 }
-#connect{
-  /* display: none; */
-  width: 70px;  
+
+#connect {
+  width: 70px;
   margin-right: 10px;
 }
-#connect a{
-  /* color: #046381;
-  border: 2px solid #046381; */
+
+#connect>a {
   border-radius: 50%;
   width: 18px;
   height: 18px;
@@ -155,7 +156,8 @@ nav li {
   text-align: center;
   font-size: 16px;
 }
-.profile-options{
+
+.profile-options {
   display: none;
 }
 
@@ -193,13 +195,106 @@ footer img {
   font-size: 18px;
 }
 
-.log-fa{
+.log-fa {
   background-color: #4267b2;
 }
-.login input,a,div{
+
+.login input,
+a,
+div {
   margin-bottom: 5px;
 }
-.log-fa a{
+
+.log-fa a {
   padding-left: 5px;
   color: white;
+}
+
+
+/* #container {
+  max-width: 480px;
+  width: 100%;
+} */
+
+#pop-search {
+  display: none;
+}
+
+#pop-search a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pop-search i {
+  margin-left: 8px;
+}
+
+#demo_box {
+  width: 70px;
+  margin-right: 10px;
+  display: none;
+  /* margin: 20px auto; */
+}
+
+#demo_li {
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+
+/* .fa {
+  font-size: 40px;
+   line-height: 70px;
+} */
+
+.fa-bars {
+  color: #046381;
+}
+
+
+/* pre {
+  font-family: Consolas, Liberation Mono, Courier, monospace;
+  font-size: 13px;
+} */
+
+@media screen and (orientation: portrait) {
+  pre {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 970px) {
+  #demo_box {
+    display: block;
+  }
+  #pop-search {
+    display: block;
+  }
+  nav {
+    padding-bottom: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-search {
+    display: none;
+  }
+  .info li {
+    width: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .info li {
+    margin-bottom: 15px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 430px) {
+  #pop-search input {
+    display: none;
+  }
 }
